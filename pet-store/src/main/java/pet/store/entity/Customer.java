@@ -20,7 +20,11 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long customerId;
 
-    private String customerName;
+	
+	//Changed to match assignment solution. 
+    private String customerFirstName;
+    private String customerLastName;
+    //end change
     private String customerEmail;
 
     @EqualsAndHashCode.Exclude

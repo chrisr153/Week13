@@ -22,9 +22,13 @@ public class PetStore {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long petStoreId;
-
     private String petStoreName;
-    private String petStoreLocation;
+    //private String petStoreLocation;
+    private String petStoreAddress;
+    private String petStoreCity;
+    private String petStoreState;
+    private String petStoreZip;
+    private String petStorePhone;
 
     @EqualsAndHashCode.Exclude
     @ToString.Exclude

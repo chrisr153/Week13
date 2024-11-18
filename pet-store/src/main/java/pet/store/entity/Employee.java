@@ -17,7 +17,12 @@ public class Employee {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long employeeId;
 
-	private String employeeName;
+	//Changed to match assignment solution.
+	private String employeeFirstName;
+	private String employeeLastName;
+	private String employeePhone;
+	private String employeeJobTitle;
+	//End change
 	    
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "pet_store_id")
